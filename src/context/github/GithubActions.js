@@ -16,7 +16,7 @@ const github = axios.create({
             q: text
         })
         
-        const response = await github.get(`search/users/?${params}`)
+        const response = await github.get(`search/users?${params}`)
 
         return response.data.items
     }
